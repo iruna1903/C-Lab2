@@ -1,0 +1,28 @@
+using Microsoft.VisualBasic;
+using System;
+public class Program
+{
+    public static void Main()
+    {
+        string drink = Console.ReadLine();
+        switch (drink)
+        {
+            case "coffee":
+            case "Coffee":
+                Console.WriteLine("Coffee 45 UAN");
+                break;
+            case "tea":
+            case "Tea":
+                Console.WriteLine("Tea 15 UAN");
+                break;
+            case "juice":
+            case "Juice":
+                Console.WriteLine("Juice 20 UAN");
+                break;
+            case "water":
+            case "Water":
+                Console.WriteLine("Water 10 UAN");
+                break;
+        }
+    }
+}
