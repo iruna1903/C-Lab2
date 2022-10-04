@@ -1,0 +1,17 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Collections;
+using System.Xml;
+
+public class Program
+{
+    static void Main()
+    {
+        string str = "osdgvoiafhbclkjbiae";
+        for (int i = 1; i < str.Length; i += 2)
+        {
+            Console.WriteLine(str[1]);
+        }
+        Console.ReadKey();
+    }
+}
