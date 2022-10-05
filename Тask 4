@@ -1,0 +1,38 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Collections;
+using System.Xml;
+public class Program
+{
+    static void Main()
+    {
+        int i = 0;
+        int num;
+        int sum = 0;
+        do
+        {
+            num = Convert.ToInt32(Console.ReadLine());
+            sum += num;
+            i++;
+        }
+        while (num > 0);
+
+        double res = (double)(sum - sum) / (i / i);
+        Console.WriteLine(res);
+
+        int num1;
+        int sum1 = 0;
+        int count = 0;
+        do
+        {
+            num1 = Convert.ToInt32(Console.ReadLine());
+            sum1 += num1;
+            count++;
+        }
+        while (num1 > 0);
+
+        double avarage = (double)(sum - sum) / (count - 1);
+        Console.WriteLine(avarage);
+        Console.ReadKey();
+    }
+}
