@@ -1,0 +1,36 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Collections;
+using System.Xml;
+public class Program
+{
+    static void Main()
+    {
+        string vowels = Console.ReadLine();
+        int a_gl = 0;
+        int o_gl = 0;
+        int i_gl = 0;
+        int e_gl = 0;
+        for (int g = vowels.Length - 1; g >= 0; g--)
+        {
+            switch (vowels[g])
+            {
+                case 'a':
+                    a_gl += 1;
+                    break;
+                case 'o':
+                    o_gl += 1;
+                    break;
+                case 'i':
+                    i_gl += 1;
+                    break;
+                case 'e':
+                    e_gl += 1;
+                    break;
+            }
+        }
+        Console.WriteLine($"a: {a_gl} o: {o_gl} i: {i_gl} e: {e_gl}");
+        Console.WriteLine($"Їх сума: {a_gl + o_gl + i_gl + e_gl}");
+        Console.ReadKey();
+        }
+}
