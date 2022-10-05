@@ -10,10 +10,12 @@ public class Program
         int year;
         year = Convert.ToInt32(Console.ReadLine());
         if (year % 4 == 0)
-            if (year % 100 != 0)
-                Console.WriteLine("Рік високосний");
+        {
+            if (year % 100 != 0) || ((year % 100 == 0) && (year % 400 == 0)))
+                Console.WriteLine("Рiк високосний");
             else
-                Console.WriteLine("Ршк не високосний");
+                Console.WriteLine("Рiк не високосний");
+          }
         Console.ReadKey();
     }
 }
